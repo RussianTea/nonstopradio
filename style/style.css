@@ -5,16 +5,16 @@ html, body {
 
 .top{
 	color:#ffffff;
-	
+
 	background-image:url(../img/nonstop-site.jpg);
 	background-attachment: fixed;
 	background-repeat: no-repeat;
-	
+
     z-index: -1;
     top:0;
-    left:0; 
+    left:0;
 	right:0;
-	
+
 	border:none;
 	height:90%;
 	min-width:100%;
@@ -26,9 +26,9 @@ html, body {
 	background: #edeef0;
 	box-shadow: 0px -3px 5px 0px #000;
 	box-sizing: border-box;
-	
+
 	width:100%;
-	
+
 	padding: 0.5em 0.5em;
 }
 
@@ -92,7 +92,7 @@ html, body {
 	padding-left: 50px;
 	position: fixed;
 	bottom:0;
-	
+
 	background: linear-gradient(186deg, #56c7c8, #66c498, #add58f, #fbf588, #faca7b, #f3aa75, #f59179, #f67c71, #be82b8, #836eb3, #5b69b4, #608dc8);
 	background-size: 2400% 2400%;
 
@@ -100,7 +100,7 @@ html, body {
 	-moz-animation: gradient-anim 44s ease infinite;
 	-o-animation: gradient-anim 44s ease infinite;
 	animation: gradient-anim 44s ease infinite;
-	
+
 	box-shadow: 0px -3px 5px 0px #000;
 	box-sizing: border-box;
 }
@@ -120,7 +120,7 @@ html, body {
     50%{background-position:100% 32%}
     100%{background-position:0% 69%}
 }
-@keyframes gradient-anim { 
+@keyframes gradient-anim {
     0%{background-position:0% 69%}
     50%{background-position:100% 32%}
     100%{background-position:0% 69%}
@@ -130,9 +130,9 @@ html, body {
 	background-color:#edeef0;
 	box-shadow: 0px -3px 5px 0px #000;
 	box-sizing: border-box;
-	
+
 	width:100%;
-	
+
 	padding: 0.5em 0.5em;
 }
 
@@ -168,9 +168,9 @@ html, body {
 	border-top: 25px solid transparent;
 	border-left: 50px solid #3c3c3c;
 	border-bottom: 25px solid transparent;
-	
+
 	/* Свойства отступа */
-	margin-left: 30px; 
+	margin-left: 30px;
  	margin-top: 15px;
 	border-radius:3px;
 }
@@ -202,10 +202,15 @@ html, body {
 }
 
 .block-free{
-	height:10px;
+	/*height:10px;*/
 	background-image: url(../img/nonstop-3800.jpg);
 	background-attachment: fixed;
 	background-repeat: no-repeat;
+}
+.block-free p {
+  margin-top: 30px;
+  padding: 0 15px;
+  color: #ffffff;
 }
 
 .footer{
@@ -221,6 +226,10 @@ html, body {
 	color: #edeef0;
 }
 
+.footer-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
 .copyright{
 	color: #edeef0;
 	margin-top: 6em;
@@ -230,27 +239,33 @@ a {
 	text-decoration: none;
 }
 
-.list-left{
+.social-list {
 	color: #edeef0;
-	position: absolute;
-	margin-bottom: 10em;
+	/*position: absolute;
+	margin-bottom: 10em;*/
 }
 
-.list-left li{
+.social-list li{
 	margin: 10px;
 }
 
-.list-middle{
+/*.list-middle{
 	margin-left: 10em;
 	margin-top: 0;
 	position: absolute;
-}
+}*/
 
 .list-middle li{
 	margin: 10px;
 }
 
 .content-right{
-	float: right;
-	margin-top: 0;
+  display: flex;
+  flex-direction: column-reverse;
+	/*float: right;
+	margin-top: 0;*/
+}
+
+.main {
+  display: flex;
 }
